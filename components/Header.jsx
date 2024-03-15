@@ -41,10 +41,10 @@ const Header = () => {
               underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
             <ThemeToggler />
-          </div>
-          {/* mobile nav */}
-          <div className="xl:hidden">
-            <MobileNav />
+            {/* mobile nav */}
+            <div className="xl:hidden">
+              <MobileNav />
+            </div>
           </div>
         </div>
       </div>
