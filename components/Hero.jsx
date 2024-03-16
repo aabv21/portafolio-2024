@@ -12,7 +12,7 @@ import {
 // Components
 import DevImg from "./DevImg";
 import Badge from "./Badge";
-import Social from "./Social";
+import Socials from "./Socials";
 
 const Hero = () => {
   return (
@@ -41,9 +41,43 @@ const Hero = () => {
                 Download CV <Download size={18} />{" "}
               </Button>
             </div>
+            {/* socials */}
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
+            />
           </div>
           {/* image */}
-          <div className="hidden xl:flex relative"> image </div>
+          <div className="hidden xl:flex relative">
+            {/* badge 1 */}
+            <Badge
+              icon={<RiBriefcase4Fill />}
+              containerStyles="absolute top-[24%] -left-[5rem]"
+              endCountNum={5}
+              badgeText={"Years of Experience"}
+            />
+            {/* badge 2 */}
+            <Badge
+              icon={<RiTeamFill />}
+              containerStyles="absolute top-[55%] -right-8"
+              endCountNum={6}
+              badgeText={"Lorem Ipsum"}
+              endCountText={"k"}
+            />
+            {/* badge 3 */}
+            <Badge
+              icon={<RiTodoFill />}
+              containerStyles="absolute top-[80%] -left-[1rem]"
+              endCountNum={10}
+              badgeText={"Lorem Ipsum"}
+              endCountText={"k"}
+            />
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <DevImg
+              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+              imgSrc="/hero/developer.png"
+            />
+          </div>
         </div>
         {/* text */}
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
