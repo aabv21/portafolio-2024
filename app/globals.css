@@ -12,9 +12,9 @@
       --popover: 0 0% 100%;
       --popover-foreground: 224 71.4% 4.1%;
       --primary: 262.1 83.3% 57.8%;
-      --primary-foreground: 210 20% 98%;
-      --secondary: 220 14.3% 95.9%;
-      --secondary-foreground: 220.9 39.3% 11%;
+      --primary-foreground: 300 0% 100%;
+      --secondary: 240 19% 16%;
+      --secondary-foreground: 300 0% 100%;
       --tertiary: 27 82% 98%
       --muted: 220 14.3% 95.9%;
       --muted-foreground: 220 8.9% 46.1%;
@@ -30,14 +30,14 @@
 
     .dark {
       --background: 237 22% 20%;
-      --foreground: 210 20% 98%;
-      --card: 237 22% 20%;
-      --card-foreground: 210 20% 98%;
+      --foreground: 60 9.1% 97.8%;
+      --card: 240 19% 16%;
+      --card-foreground: 300 0% 100%;
       --popover: 224 71.4% 4.1%;
       --popover-foreground: 210 20% 98%;
       --primary: 263.4 70% 50.4%;
-      --primary-foreground: 210 20% 98%;
-      --secondary: 237 22% 20%;
+      --primary-foreground: 300 0% 100%;
+      --secondary: 240 19% 16%;
       --secondary-foreground: 300 0% 100%;
       --tertiary: 237 22% 20%;
       --muted: 215 27.9% 16.9%;
@@ -88,4 +88,8 @@
 
 .section-title {
   @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
+}
+
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  @apply bg-primary;
 }
