@@ -15,7 +15,7 @@
       --primary-foreground: 300 0% 100%;
       --secondary: 240 19% 16%;
       --secondary-foreground: 300 0% 100%;
-      --tertiary: 27 82% 98%
+      --tertiary: 262.1 83.3% 57.8%;
       --muted: 220 14.3% 95.9%;
       --muted-foreground: 220 8.9% 46.1%;
       --accent: 220 14.3% 95.9%;
@@ -48,7 +48,7 @@
       --destructive-foreground: 210 20% 98%;
       --border: 237 22% 23%;
       --input: 215 27.9% 16.9%;
-      --ring: 263.4 70% 50.4%
+      --ring: 263.4 70% 50.4%;
     }
   }
 }
@@ -90,6 +90,8 @@
   @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
 }
 
-.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   @apply bg-primary;
 }
