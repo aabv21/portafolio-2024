@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Github, Link2Icon } from "lucide-react";
-import { Badge } from "./ui/badge";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, truncate }) => {
+  console.log(truncate);
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
@@ -38,17 +38,13 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
-        {project.categories.map((item, index) => {
-          <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
-            {item}
-          </Badge>;
-        })}
-        <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
-          {project.category}
-        </Badge>
+      <div className={`${truncate ? "h-[140px]" : "h-full"} px-8 py-6`}>
         <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg text-pretty">
+        <p
+          className={`text-muted-foreground text-lg ${
+            truncate ? "line-clamp-2" : ""
+          }`}
+        >
           {project.description}
         </p>
       </div>

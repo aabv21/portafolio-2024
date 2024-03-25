@@ -16,7 +16,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section className="py-20 pt-12 xl:py-24 xl:pt-28 bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-16 pt-12 xl:py-24 xl:pt-28 bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -36,9 +36,16 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <Link
+                href="./andres-buelvas-cv.pdf"
+                variant="secondary"
+                target="_blank"
+                className="gap-x-2"
+              >
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>{" "}
+              </Link>
             </div>
             {/* socials */}
             <Socials
