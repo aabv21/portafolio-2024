@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const basePath = "/portafolio-2024/";
+const basePath = "/portafolio-2024";
 
 const nextConfig = {
   output: "export", // enables static exports
@@ -8,6 +8,7 @@ const nextConfig = {
   reactStrictMode: false,
   images: {
     path: `${basePath}`,
+    domains: ["https://aabv21.github.io"],
   },
 };
 
