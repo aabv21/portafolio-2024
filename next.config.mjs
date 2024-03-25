@@ -8,7 +8,7 @@ const nextConfig = {
   reactStrictMode: false,
   images: {
     path: `${basePath}`,
-    domains: ["https://aabv21.github.io"],
+    // domains: ["https://aabv21.github.io"],
   },
 };
 
