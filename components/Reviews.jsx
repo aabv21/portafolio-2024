@@ -96,6 +96,7 @@ const Reviews = () => {
                         height={70}
                         alt=""
                         priority
+                        unoptimized
                       />
                       {/* name */}
                       <div className="flex flex-col ">

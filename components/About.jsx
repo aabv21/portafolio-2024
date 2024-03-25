@@ -234,6 +234,7 @@ const About = () => {
                                 height={48}
                                 alt=""
                                 priority
+                                unoptimized
                               ></Image>
                             </div>
                           );
