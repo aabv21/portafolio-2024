@@ -28,19 +28,19 @@ const Contact = () => {
         {/* info text and form */}
         <div className="grid xl:grid-cols-2 mb-24 xl:mb-32">
           <div className="flex flex-col gap-y-4 xl:gap-y-14 mb-12 xl:mb-24 text-base xl:text-lg">
-            <div class="flex items-center gap-x-8">
-              <MailIcon size={18} className="text-primary" />
-              <div>andres.buelvas.2102@gmail.com</div>
+            <div className="flex items-center gap-x-8">
+              <MailIcon size={20} className="text-primary" />
+              <div className="text-lg">andres.buelvas.2102@gmail.com</div>
             </div>
 
             <div class="flex items-center gap-x-8">
-              <HomeIcon size={18} className="text-primary" />
-              <div>Caracas, Venezuela</div>
+              <HomeIcon size={20} className="text-primary" />
+              <div className="text-lg">Caracas, Venezuela</div>
             </div>
 
             <div class="flex items-center gap-x-8">
-              <PhoneCall size={18} className="text-primary" />
-              <div>+58 424 120 4323</div>
+              <PhoneCall size={20} className="text-primary" />
+              <div className="text-lg">+58 424 120 4323</div>
             </div>
           </div>
           <Form />

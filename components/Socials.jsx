@@ -5,11 +5,15 @@ import { RiLinkedinFill, RiGithubFill, RiCodeBoxFill } from "react-icons/ri";
 import Link from "next/link";
 
 const icons = [
-  // { path: "/", name: <RiYoutubeFill /> },
-  { path: "/", name: <RiLinkedinFill /> },
-  { path: "/", name: <RiGithubFill /> },
-  { path: "/", name: <RiCodeBoxFill /> },
-  // { path: "/", name: <RiInstallFill /> },
+  {
+    path: "https://www.linkedin.com/in/andr%C3%A9s-buelvas-678993183/?locale=en_US",
+    name: <RiLinkedinFill />,
+  },
+  { path: "/https://github.com/aabv21", name: <RiGithubFill /> },
+  {
+    path: "/https://www.hackerrank.com/profile/andres_buelvas_1",
+    name: <RiCodeBoxFill />,
+  },
 ];
 
 const Socials = ({ containerStyles, iconsStyles }) => {

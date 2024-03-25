@@ -20,7 +20,7 @@ const infoData = [
   { icon: <Calendar size={20} />, text: "Born on 21 Feb, 1996" },
   {
     icon: <GraduationCap size={20} />,
-    text: "Computer Science & Engineering, BE",
+    text: "Computer Engineering, BE",
   },
 ];
 
@@ -31,7 +31,7 @@ const qualificationData = [
       {
         university: "Unversidad Simón Bolívar",
         qualification: "Bachelor of Science",
-        years: "201 - 2019",
+        years: "2013 - 2019",
       },
     ],
   },
@@ -41,12 +41,12 @@ const qualificationData = [
       {
         company: "Latinux",
         role: "Backend Engineer",
-        years: "2013 - 2019",
+        years: "2018 - 2019",
       },
       {
         company: "SmartHop",
-        role: "Full Stack Engineer, Senior Full Stack Engineer, Engineer Manager",
-        years: "2013 - 2019",
+        role: "Full Stack Engineer, Senior Full Stack Engineer and Engineer Manager",
+        years: "2019 - 2024",
       },
     ],
   },
@@ -56,10 +56,10 @@ const skillData = [
   {
     title: "skills",
     data: [
-      { name: "HTML, CSS" },
+      { name: "HTML, CSS, Tailwind" },
       { name: "JavaScript, Python" },
       { name: "React, React Native" },
-      { name: "TypeScript" },
+      { name: "MongoDB, Redis" },
       { name: "Stripe" },
     ],
   },
@@ -114,7 +114,7 @@ const listQualificationsGroup = (title) => {
 
 const About = () => {
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[860px] py-20 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
@@ -128,7 +128,7 @@ const About = () => {
             />
           </div>
           {/*tabs */}
-          <div className="flex-1">
+          <div className=" flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="bg-prmary w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
                 <TabsTrigger className="w-[162px] xl-w-auto" value="personal">
@@ -158,7 +158,7 @@ const About = () => {
                       type specimen book
                     </p>
                     {/* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="grid xl:grid-cols-2 gap-4">
                       {infoData.map((item, index) => {
                         return (
                           <div
@@ -172,11 +172,6 @@ const About = () => {
                       })}
                     </div>
                     {/* languages */}
-                    <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skills</div>
-                      <div className="border-b border-border"></div>
-                      <div>Spanish, English</div>
-                    </div>
                   </div>
                 </TabsContent>
                 {/* qualifications */}
@@ -195,7 +190,7 @@ const About = () => {
                   </div>
                 </TabsContent>
                 <TabsContent value="skills">
-                  <di className="text-center xl:text-left">
+                  <div className="text-center xl:text-left">
                     <h3 className="h3 mb-8"> What I Use Everyday</h3>
                     {/* skills */}
                     <div className="mb-16">
@@ -219,29 +214,15 @@ const About = () => {
                     </div>
                     {/* tools */}
                     <div className="">
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Tools
+                      <h4 className="text-xl font-semibold text-primary mb-2">
+                        Language Skills
                       </h4>
                       <div className="border-b border-border mb-4"></div>
-                      {/* list */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, "tools").data.map((item, index) => {
-                          return (
-                            <div className="" key={index}>
-                              <Image
-                                src={item.imgPath}
-                                width={48}
-                                height={48}
-                                alt=""
-                                priority
-                                unoptimized
-                              ></Image>
-                            </div>
-                          );
-                        })}
+                      <div className="flex flex-col gap-y-2">
+                        <div>Spanish, English</div>
                       </div>
                     </div>
-                  </di>
+                  </div>
                 </TabsContent>
               </div>
             </Tabs>

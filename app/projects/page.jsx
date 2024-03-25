@@ -9,17 +9,22 @@ import { projectData } from "@/lib/utils";
 // remove categories duplicated
 const uniqueCategories = [
   "all projects",
-  ...new Set(projectData.map((item) => item.category)),
+  "JavaScript",
+  "Python",
+  "Node.js",
+  "React",
+  "Stripe",
 ];
 
 const Projects = () => {
-  const [categories, setCategories] = useState(uniqueCategories);
+  const [categories] = useState(uniqueCategories);
   const [category, setCategory] = useState("all projects");
 
   const filteredProjects = projectData.filter((project) => {
+    console.log(project, category);
     return category === "all projects"
       ? project
-      : project.category === category;
+      : project.categories.includes(category);
   });
 
   return (

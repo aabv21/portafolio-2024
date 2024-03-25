@@ -1,4 +1,4 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import { SquareCode, Server, Smartphone } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,20 +9,20 @@ import {
 
 const servicesData = [
   {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Web Desing",
+    icon: <SquareCode size={72} strokeWidth={0.8} />,
+    title: "Backend Development",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Development",
+    icon: <Server size={72} strokeWidth={0.8} />,
+    title: "Frontend Development",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Development",
+    icon: <Smartphone size={72} strokeWidth={0.8} />,
+    title: "Mobile Development",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
@@ -30,10 +30,10 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="mb-12 xl:mb-36">
+    <section className="py-20 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 xl-mb-24 text-center mx-auto">
-          My Services
+          Services
         </h2>
         {/*items */}
         <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
