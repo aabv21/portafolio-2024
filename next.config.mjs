@@ -7,8 +7,7 @@ const nextConfig = {
   basePath, // for github actions deploy
   reactStrictMode: false,
   images: {
-    // path: `${basePath}`,
-    domains: ["https://aabv21.github.io/portafolio-2024"],
+    path: `${basePath}`,
   },
 };
 
