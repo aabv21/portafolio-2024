@@ -7,7 +7,7 @@ const nextConfig = {
   basePath, // for github actions deploy
   reactStrictMode: true,
   images: {
-    path: `${basePath}/_next/image`,
+    path: `${basePath}`,
   },
 };
 
