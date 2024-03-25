@@ -5,10 +5,10 @@ const basePath = "/portafolio-2024";
 const nextConfig = {
   output: "export", // enables static exports
   basePath, // for github actions deploy
-  reactStrictMode: true,
-  images: {
-    path: `${basePath}`,
-  },
+  reactStrictMode: false,
+  // images: {
+  //   path: `${basePath}`,
+  // },
 };
 
 // const nextConfig = {};
