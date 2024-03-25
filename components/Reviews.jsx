@@ -21,42 +21,42 @@ import { Pagination } from "swiper/modules";
 
 const reviewsData = [
   {
-    avatar: "/reviews/avatar-1.png",
+    avatar: "./reviews/avatar-1.png",
     name: "Alvin Yakitori",
     job: "Random job 1",
     review:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    avatar: "/reviews/avatar-2.png",
+    avatar: "./reviews/avatar-2.png",
     name: "Jefferson Gutierritos",
     job: "Random job 2",
     review:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    avatar: "/reviews/avatar-3.png",
+    avatar: "./reviews/avatar-3.png",
     name: "Random Name",
     job: "Random job 3",
     review:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    avatar: "/reviews/avatar-4.png",
+    avatar: "./reviews/avatar-4.png",
     name: "Random Name 2",
     job: "Random job 4",
     review:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    avatar: "/reviews/avatar-5.png",
+    avatar: "./reviews/avatar-5.png",
     name: "Jefferson Gutierritos",
     job: "Random Name 3",
     review:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   },
   {
-    avatar: "/reviews/avatar-6.png",
+    avatar: "./reviews/avatar-6.png",
     name: "Random Name",
     job: "Random Name 4",
     review:
