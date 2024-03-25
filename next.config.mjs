@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/portafolio-2024", // for github actions deploy
   output: "export", // enables static exports
-  reactStrictMode: true,
+  basePath: "/portafolio-2024", // for github actions deploy
+  // reactStrictMode: true,
 };
 
 export default nextConfig;
