@@ -19,11 +19,11 @@ const Form = () => {
       </div>
 
       <div className="relative flex items-center">
-        <Textarea placeholder="Type Your Message Here." />
+        <Textarea placeholder="Type Your Message" />
         <MessageSquare className="absolute top-4 right-6" size={20} />
       </div>
       <Button className="flex items-center gap-x-1 max-w-[166px]">
-        Let's Talk
+        Get in touch
         <ArrowRightIcon size={20} />
       </Button>
     </form>

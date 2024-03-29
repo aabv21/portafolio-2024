@@ -1,4 +1,5 @@
 const basePath = "/portafolio-2024";
+// const basePath = "";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

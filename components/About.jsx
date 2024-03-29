@@ -29,7 +29,7 @@ const qualificationData = [
     data: [
       {
         university: "Unversidad Simón Bolívar",
-        qualification: "Bachelor of Science",
+        qualification: "Bachelor of Engineer",
         years: "2013 - 2019",
       },
     ],
@@ -148,13 +148,13 @@ const About = () => {
                 {/* personal */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4"> Lorem Ipsum</h3>
+                    <h3 className="h3 mb-4"> A Bit About Me</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industrys
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book
+                      Computer Engineer graduated from Simón Bolivar University
+                      in Venezuela. Passionate about the development of systems
+                      and software oriented to back-end and front-end, in search
+                      of new emerging technologies. I am a fast learner, easy to
+                      work in a team, responsible, and friendly.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4">
@@ -177,7 +177,7 @@ const About = () => {
                 <TabsContent value="qualifications">
                   <div>
                     <h3 className="h3 mb-8 text-center xl:text-left">
-                      My Awesome Journey
+                      My Journey
                     </h3>
                     {/* experience and education wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">

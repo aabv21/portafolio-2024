@@ -27,8 +27,8 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4"> Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            You can be curious and take a look at my great contributions
+            throughout my journey as a developer.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>

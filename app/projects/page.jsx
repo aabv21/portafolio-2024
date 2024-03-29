@@ -12,6 +12,7 @@ const uniqueCategories = [
   "JavaScript",
   "Python",
   "Node.js",
+  "Next.js",
   "React",
   "Stripe",
 ];
@@ -21,7 +22,6 @@ const Projects = () => {
   const [category, setCategory] = useState("all projects");
 
   const filteredProjects = projectData.filter((project) => {
-    console.log(project, category);
     return category === "all projects"
       ? project
       : project.categories.includes(category);

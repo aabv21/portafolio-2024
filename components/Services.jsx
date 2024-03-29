@@ -11,20 +11,17 @@ const servicesData = [
   {
     icon: <SquareCode size={72} strokeWidth={0.8} />,
     title: "Backend Development",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    description: "Microservices-based architecture",
   },
   {
     icon: <Server size={72} strokeWidth={0.8} />,
     title: "Frontend Development",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    description: "Modern user interfaces",
   },
   {
     icon: <Smartphone size={72} strokeWidth={0.8} />,
     title: "Mobile Development",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    description: "Responsive applications",
   },
 ];
 

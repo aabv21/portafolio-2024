@@ -1,10 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardContent, CardHeader } from "./ui/card";
+import { Card, CardHeader } from "./ui/card";
 import { Github, Link2Icon } from "lucide-react";
 
 const ProjectCard = ({ project, truncate }) => {
-  console.log(truncate);
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">

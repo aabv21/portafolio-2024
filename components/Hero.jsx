@@ -14,6 +14,9 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
+// Lin
+import { projectData, START_YEAR } from "@/lib/utils";
+
 const Hero = () => {
   return (
     <section className="py-16 pt-12 xl:py-24 xl:pt-28 bg-no-repeat bg-bottom bg-cover dark:bg-none">
@@ -22,12 +25,12 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Web Developer
+              Computer Engineer
             </div>
-            <h1 className="h1 mb-4">Hello, my name is Andrés Buelvas</h1>
+            <h1 className="h1 mb-4">Hey there, I'm Andrés Buelvas</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational journey
-              and what I engage in professionally
+              Welcome to my portafolio! I can help you solve problems, design
+              ideas and build modern applications.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:xm-0 mb-12">
@@ -59,28 +62,29 @@ const Hero = () => {
             <Badge
               icon={<RiBriefcase4Fill />}
               containerStyles="absolute top-[24%] -left-[5rem]"
-              endCountNum={5}
+              endCountNum={+new Date().getFullYear() - START_YEAR}
+              prefix={"+"}
               badgeText={"Years of Experience"}
             />
             {/* badge 2 */}
             <Badge
               icon={<RiTeamFill />}
               containerStyles="absolute top-[55%] -right-8"
-              endCountNum={6}
-              badgeText={"Lorem Ipsum"}
-              endCountText={"k"}
+              endCountNum={projectData.length}
+              badgeText={"Projects built"}
             />
             {/* badge 3 */}
             <Badge
               icon={<RiTodoFill />}
-              containerStyles="absolute top-[80%] -left-[1rem]"
-              endCountNum={10}
-              badgeText={"Lorem Ipsum"}
-              endCountText={"k"}
+              containerStyles="absolute top-[80%] -left-[2rem]"
+              endCountNum={100}
+              suffix={"%"}
+              badgeText={"eager to learn"}
             />
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[610px] h-[600px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
-              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+              containerStyles="w-[500px] h-[482px] bg-no-repeat relative bg-bottom"
+              // containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
               imgSrc={`./hero/developer.png`}
             />
           </div>
