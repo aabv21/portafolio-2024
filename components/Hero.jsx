@@ -90,7 +90,7 @@ const Hero = () => {
           </div>
         </div>
         {/* text */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden md:flex absolute left-2/4 mt-24 bottom-36 xl:bottom-10 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>

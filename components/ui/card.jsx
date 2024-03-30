@@ -2,11 +2,13 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-const Card = React.forwardRef(({ className, ...props }, ref) => (
+const Card = React.forwardRef(({ className, truncate, ...props }, ref) => (
   <div
     ref={ref}
     className={cn(
-      "rounded-[30px] border bg-background text-card-foreground",
+      `rounded-[30px] border bg-background text-card-foreground ${
+        truncate ? "" : "h-full"
+      }`,
       className
     )}
     {...props}

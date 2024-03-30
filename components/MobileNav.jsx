@@ -14,13 +14,16 @@ const MobileNav = () => {
       <SheetContent>
         <div className="flex flex-col items-center justify-between h-full py-8">
           <div className="flex flex-col items-center gap-y-32">
-            <Logo />
+            {/* <Logo /> */}
             <Nav
               containerStyles="flex flex-col items-center gap-y-6"
-              linkStyles="text-2xl"
+              linkStyles="relative hover:text-primary transition-all text-2xl"
             />
           </div>
-          <Socials containerStyles="flex gap-x-4" iconsStyles="text-2xl" />
+          <Socials
+            containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+            iconsStyles="text-foreground text-2xl hover:text-primary transition-all"
+          />
         </div>
       </SheetContent>
     </Sheet>
