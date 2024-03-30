@@ -19,7 +19,7 @@ import { projectData, START_YEAR } from "@/lib/utils";
 
 const Hero = () => {
   return (
-    <section className="py-16 pt-12 xl:py-24 xl:pt-28 bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 pt-12 xl:py-24 xl:pt-28 bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -90,9 +90,9 @@ const Hero = () => {
           </div>
         </div>
         {/* text */}
-        <div className="hidden md:flex absolute left-2/4 mt-24 bottom-36 xl:bottom-10 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
-        </div>
+      </div>
+      <div className="flex justify-center mt-16 xl:mt-2 animate-bounce">
+        <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
     </section>
   );

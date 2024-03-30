@@ -1,5 +1,4 @@
 import DevImg from "./DevImg";
-import Image from "next/image";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -129,7 +128,7 @@ const About = () => {
           {/*tabs */}
           <div className=" flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="bg-prmary w-full grid xl:grid-cols-2 xl:max-w-[455px] xl:border dark:border-none">
+              <TabsList className="bg-prmary w-full grid xl:grid-cols-2  gap-x-2 xl:max-w-[440px] xl:border dark:border-none">
                 <TabsTrigger className="w-[210px] xl-w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
