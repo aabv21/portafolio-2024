@@ -4,11 +4,13 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 // import swiepr react components
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
 import { Pagination } from "swiper/modules";
@@ -37,16 +39,17 @@ const Work = () => {
         {/* slider*/}
         <div className="xl:max-w-[900px] xl:absolute right-0 top-0">
           <Swiper
+            modules={[Pagination, Navigation, Autoplay]}
             className="h-[480px]"
             slidesPerView={1}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
+              640: { slidesPerView: 2 },
             }}
             spaceBetween={30}
-            modules={[Pagination]}
-            pagination={{ clickeable: true }}
+            navigation={true}
+            autoplay={{ delay: 2000 }}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
           >
             {/* show only the first 4 projects for the slides*/}
             {projectData.slice(0, 4).map((item, index) => {
