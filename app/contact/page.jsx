@@ -27,12 +27,12 @@ const Contact = () => {
               <div className="text-lg">andres.buelvas.2102@gmail.com</div>
             </div>
 
-            <div class="flex items-center gap-x-8">
+            <div className="flex items-center gap-x-8">
               <HomeIcon size={20} className="text-primary" />
               <div className="text-lg">Caracas, Venezuela</div>
             </div>
 
-            <div class="flex items-center gap-x-8">
+            <div className="flex items-center gap-x-8">
               <PhoneCall size={20} className="text-primary" />
               <div className="text-lg">+58 424 120 4323</div>
             </div>

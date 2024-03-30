@@ -96,3 +96,8 @@
   .swiper-pagination-bullet {
   @apply bg-primary;
 }
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  @apply mt-[calc(-2rem_-_(var(--swiper-navigation-size)))];
+}

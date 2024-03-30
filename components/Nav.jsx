@@ -11,7 +11,12 @@ const links = [
   { path: "/contact", name: "contact" },
 ];
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
+const Nav = ({
+  containerStyles,
+  linkStyles,
+  underlineStyles,
+  setIsOpenMobileNav,
+}) => {
   const path = usePathname();
   return (
     <nav className={`${containerStyles}`}>
@@ -21,6 +26,9 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
             key={index}
             href={link.path}
             className={`capitalize ${linkStyles}`}
+            onClick={() =>
+              setIsOpenMobileNav ? setIsOpenMobileNav(false) : undefined
+            }
           >
             {link.path === path && (
               <motion.span
