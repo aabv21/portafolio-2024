@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect } from "react";
 
 // Components
 import Logo from "./Logo";
@@ -31,8 +31,8 @@ const Header = () => {
       } sticky top-0 z-30 transition-all`}
     >
       <div className="container mx-auto">
-        <div className="flex justify-end items-center">
-          {/* <Logo /> */}
+        <div className="flex justify-between items-center">
+          <Logo />
           {/* nav */}
           <div className="flex items-center gap-x-6">
             <Nav

@@ -99,5 +99,10 @@
 
 div.swiper-button-prev,
 div.swiper-button-next {
-  @apply mt-[calc(-2rem_-_(var(--swiper-navigation-size)))];
+  @apply mt-[calc(-2rem_-_(var(--swiper-navigation-size)))] text-5xl;
+}
+
+div.swiper-button-prev:after,
+div.swiper-button-next:after {
+  @apply text-3xl;
 }

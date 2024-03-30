@@ -9,7 +9,7 @@ import {
 import { AlignJustify } from "lucide-react";
 
 import Nav from "./Nav";
-// import Logo from "./Logo";
+import Logo from "./Logo";
 import Socials from "./Socials";
 
 const MobileNav = () => {
@@ -24,7 +24,7 @@ const MobileNav = () => {
       >
         <div className="flex flex-col items-center justify-between h-full py-8">
           <div className="flex flex-col items-center gap-y-32">
-            {/* <Logo /> */}
+            <Logo />
             <Nav
               containerStyles="flex flex-col items-center gap-y-6"
               linkStyles="relative hover:text-primary transition-all text-2xl"
