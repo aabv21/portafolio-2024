@@ -40,7 +40,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Link
-                href="./andres-buelvas-cv.pdf"
+                href="./ANDRES_BUELVAS_AST_CV.pdf"
                 variant="secondary"
                 target="_blank"
                 className="gap-x-2"
